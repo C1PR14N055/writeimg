@@ -56,7 +56,7 @@ specs_four = [
 ]
 
 specs_five = [
-	"#080c18",					#color
+	"#2c2012",					#color
 	"24",						#<= 14 ch font-size
 	"20",						#<= 20 ch font-size
 	"16",						#> 20 ch font-size
@@ -67,36 +67,36 @@ specs_five = [
 ]
 
 specs_six = [
-	"#2c2012",					#color
+	"#080c18",					#color
 	"24",						#<= 14 ch font-size
 	"20",						#<= 20 ch font-size
 	"16",						#> 20 ch font-size
 	"fonts/BebasNeue.otf",		#font-familly
 	"4.5x4.5",					#rotation
-	"+87",						#left
-	"-10"						#top
+	"+142",						#left
+	"+9"						#top
 ]
 
 specs_seven = [
 	"#2c2012",					#color
-	"24",						#<= 14 ch font-size
-	"20",						#<= 20 ch font-size
-	"16",						#> 20 ch font-size
+	"23",						#<= 14 ch font-size
+	"19",						#<= 20 ch font-size
+	"15",						#> 20 ch font-size
 	"fonts/BebasNeue.otf",		#font-familly
-	"4.5x4.5",					#rotation
-	"+87",						#left
-	"-10"						#top
+	"6.5x8.5",					#rotation
+	"+7",						#left
+	"-4"						#top
 ]
 
 specs_eight = [
-	"#2c2012",					#color
-	"24",						#<= 14 ch font-size
-	"20",						#<= 20 ch font-size
-	"16",						#> 20 ch font-size
+	"#0a090f",					#color
+	"18",						#<= 14 ch font-size
+	"14",						#<= 20 ch font-size
+	"10",						#> 20 ch font-size
 	"fonts/BebasNeue.otf",		#font-familly
-	"4.5x4.5",					#rotation
-	"+87",						#left
-	"-10"						#top
+	"10.5x11",					#rotation
+	"-3",						#left
+	"-25"						#top
 ]
 
 specs_nine = [
@@ -125,7 +125,7 @@ specs_list = [specs_one, specs_two, specs_three, specs_four, specs_five,
 			specs_six, specs_seven, specs_eight, specs_nine, specs_ten]
 
 def write_on_image(text):
-	which = 5 #random.randint(1, 10)
+	which = 8 #random.randint(1, 10)
 	coord = rand_coords[which - 1]
 	specs = specs_list[which - 1]
 
