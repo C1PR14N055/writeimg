@@ -56,7 +56,7 @@ specs_four = [
 ]
 
 specs_five = [
-	"#2c2012",					#color
+	"#080c18",					#color
 	"24",						#<= 14 ch font-size
 	"20",						#<= 20 ch font-size
 	"16",						#> 20 ch font-size
@@ -125,7 +125,7 @@ specs_list = [specs_one, specs_two, specs_three, specs_four, specs_five,
 			specs_six, specs_seven, specs_eight, specs_nine, specs_ten]
 
 def write_on_image(text):
-	which = 4 #random.randint(1, 10)
+	which = 5 #random.randint(1, 10)
 	coord = rand_coords[which - 1]
 	specs = specs_list[which - 1]
 
