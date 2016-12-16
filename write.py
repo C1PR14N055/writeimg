@@ -125,7 +125,10 @@ specs_list = [specs_one, specs_two, specs_three, specs_four, specs_five,
 			specs_six, specs_seven, specs_eight, specs_nine, specs_ten]
 
 def write_on_image(text):
-	which = 10 #random.randint(1, 10)
+	which = random.randint(1, 8)
+	while which == 3:
+		which = random.randint(1, 8)
+		
 	coord = rand_coords[which - 1]
 	specs = specs_list[which - 1]
 
@@ -144,10 +147,10 @@ def write_on_image(text):
 		+ " -pointsize 14"
 		+ " -font fonts/MyriadPro.otf"
 		+ " -annotate -175+265 " + pipes.quote(coord)
-		+ " \"out/" + text + ".jpg\""], shell = True)
+		+ " \"out_three/" + text + ".jpg\""], shell = True)
 
 def read_list():
-	f = open("list_us", "r")
+	f = open("list", "r")
 	return f.readlines()
 
 def __init__():
@@ -155,7 +158,7 @@ def __init__():
 	#write_on_image("\n".join(wrap("HOLLEMAN SPECIAL TRANSPORT & PROJECT CARGO", 25)))
 	#.strip()
 
-	if True:
+	if not True:
 		write_on_image("\n".join(wrap("x", 25))) # x
 		write_on_image("\n".join(wrap("HANDSOME ADV", 25))) # 12 ch
 		write_on_image("\n".join(wrap("HANDSOME ADVSS", 25))) # 14 ch
