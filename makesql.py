@@ -1,5 +1,5 @@
 def read_list():
-	f = open("list", "r")
+	f = open("list_us", "r")
 	return f.readlines()
 
 def __init__():
@@ -12,7 +12,7 @@ def __init__():
 		print "{0} / {1}".format(i, count)
 		i += 1
 
-	f = open("sql", "w")
+	f = open("sql_us", "w")
 	f.write(sql_str)
 
 

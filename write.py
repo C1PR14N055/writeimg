@@ -147,10 +147,10 @@ def write_on_image(text):
 		+ " -pointsize 14"
 		+ " -font fonts/MyriadPro.otf"
 		+ " -annotate -175+265 " + pipes.quote(coord)
-		+ " \"out_three/" + text + ".jpg\""], shell = True)
+		+ " \"us/" + text + ".jpg\""], shell = True)
 
 def read_list():
-	f = open("list", "r")
+	f = open("list_us", "r")
 	return f.readlines()
 
 def __init__():
